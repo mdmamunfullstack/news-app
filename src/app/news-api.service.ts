@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class NewsApiService {
-  api_key = 'c2df2a0f78294a4da44f07ac0b1886f0';
+  api_key = environment.SECRET_KEY;
   constructor(private http: HttpClient) {}
   initSources() {
     return this.http.get(
