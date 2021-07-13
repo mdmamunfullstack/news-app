@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  SECRET_KEY : 'c2df2a0f78294a4da44f07ac0b1886f0',
-  
+  SECRET_KEY : 'SECRET_KEY',
 };
 
 /*
